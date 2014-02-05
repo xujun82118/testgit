@@ -1,0 +1,21 @@
+/* 
+  File.strings
+  ShowGirl美妆
+
+  Created by 徐 军 on 13-11-7.
+  Copyright (c) 2013年 徐 军. All rights reserved.
+*/
+
+
+"Mission_1" = "吃了一个香甜的苹果~";
+"Mission_2" = "散步10分钟~";
+"Mission_3" = "做了15分钟的水润面膜~";
+
+"DeclareString_1" = "美丽的早晨，美丽的我！";
+"DeclareString_2" = "全新的一天，自信的我！";
+"DeclareString_3" = "努力，我最棒！";
+
+"Declare time is on" = "是时候来一次美丽宣言了~";
+"Mission time is on" = "是时候做一件简单美丽任务了~";
+
+"FromUri" = "（App:天天更美丽）";

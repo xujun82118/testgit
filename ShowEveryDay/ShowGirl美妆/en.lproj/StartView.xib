@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StartView">
+            <connections>
+                <outlet property="staticLabel1" destination="bnv-Or-mVM" id="y9C-h9-3tb"/>
+                <outlet property="staticLabel2" destination="das-Eb-XEB" id="DTg-rX-Kpa"/>
+                <outlet property="staticLabel3" destination="Rix-LL-1nl" id="3Hb-8K-VkV"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="红伞.png" translatesAutoresizingMaskIntoConstraints="NO" id="4">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="每天一简单美丽任务, 让美丽持久" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="200" translatesAutoresizingMaskIntoConstraints="NO" id="das-Eb-XEB">
+                    <rect key="frame" x="100" y="201" width="200" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Bbi-lu-3e5"/>
+                        <constraint firstAttribute="width" constant="200" id="yEB-iy-N4y"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999973" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="定时启动你的美丽宣言与任务" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="200" translatesAutoresizingMaskIntoConstraints="NO" id="Rix-LL-1nl">
+                    <rect key="frame" x="3" y="344" width="200" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="Hf8-zn-fRJ"/>
+                        <constraint firstAttribute="height" constant="30" id="nup-pl-lzR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.69999999999999996" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="每天早上美丽自拍，每天都是新的开始" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="250" translatesAutoresizingMaskIntoConstraints="NO" id="bnv-Or-mVM">
+                    <rect key="frame" x="20" y="26" width="250" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="K37-sR-JvA"/>
+                        <constraint firstAttribute="width" constant="250" id="TG1-so-gMk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="82">
+                    <rect key="frame" x="35" y="59" width="100" height="100"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="eA2-9z-6Ze"/>
+                        <constraint firstAttribute="height" constant="100" id="vgr-kT-qrf"/>
+                    </constraints>
+                    <state key="normal" title="晨起宣言" backgroundImage="开始-圆-1.png">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="showDeclaration:" destination="-1" eventType="touchUpInside" id="93"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="94">
+                    <rect key="frame" x="197" y="239" width="90" height="90"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="90" id="A7k-Gq-vLS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="美丽任务" backgroundImage="开始-圆-2.png">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="ShowHold:" destination="-1" eventType="touchUpInside" id="111"/>
+                    </connections>
+                </button>
+                <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQu-80-rQF">
+                    <rect key="frame" x="55" y="382" width="70" height="70"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="Pnd-sh-8Kw"/>
+                        <constraint firstAttribute="height" constant="70" id="yB8-m6-igC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="设置" backgroundImage="完成-圆-btn.png">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="setup:" destination="-1" eventType="touchUpInside" id="Emj-Lw-uze"/>
+                    </connections>
+                </button>
+                <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MvL-YS-zAg">
+                    <rect key="frame" x="9" y="520" width="35" height="35"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="728-DC-sSI"/>
+                        <constraint firstAttribute="width" constant="35" id="WQv-nw-0BS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="tintColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" backgroundImage="应用推荐.png"/>
+                    <connections>
+                        <action selector="youMiAd:" destination="-1" eventType="touchUpInside" id="Vsw-Dg-rF0"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="sQu-80-rQF" secondAttribute="bottom" constant="116" id="8Ks-2q-oab"/>
+                <constraint firstItem="Rix-LL-1nl" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="3" id="A3W-jo-fdr"/>
+                <constraint firstItem="94" firstAttribute="top" secondItem="das-Eb-XEB" secondAttribute="bottom" constant="8" id="DHY-zT-Mbh"/>
+                <constraint firstItem="4" firstAttribute="centerY" secondItem="94" secondAttribute="centerY" id="Hyq-rB-q09"/>
+                <constraint firstItem="bnv-Or-mVM" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" id="Ibd-1V-3mQ"/>
+                <constraint firstAttribute="bottom" secondItem="MvL-YS-zAg" secondAttribute="bottom" constant="13" id="PxL-Hx-5cu"/>
+                <constraint firstItem="4" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="XQ8-Jo-gHv"/>
+                <constraint firstItem="82" firstAttribute="top" secondItem="1" secondAttribute="top" constant="59" id="aQf-6J-mJk"/>
+                <constraint firstAttribute="trailing" secondItem="94" secondAttribute="trailing" constant="33" id="byM-zf-yqO"/>
+                <constraint firstItem="sQu-80-rQF" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="55" id="dUo-aX-Rb4"/>
+                <constraint firstAttribute="bottom" secondItem="4" secondAttribute="bottom" id="gFr-SY-4uF"/>
+                <constraint firstItem="82" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="35" id="hBo-CY-b2M"/>
+                <constraint firstAttribute="trailing" secondItem="4" secondAttribute="trailing" id="iXv-z2-9wZ"/>
+                <constraint firstAttribute="trailing" secondItem="das-Eb-XEB" secondAttribute="trailing" constant="20" id="mzW-Ij-DaC"/>
+                <constraint firstItem="MvL-YS-zAg" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="9" id="pMj-t4-ZRR"/>
+                <constraint firstItem="sQu-80-rQF" firstAttribute="top" secondItem="Rix-LL-1nl" secondAttribute="bottom" constant="8" id="pTR-QD-fMa"/>
+                <constraint firstItem="4" firstAttribute="top" secondItem="1" secondAttribute="top" id="qg6-Tg-mRs"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="完成-圆-btn.png" width="89" height="90"/>
+        <image name="应用推荐.png" width="128" height="128"/>
+        <image name="开始-圆-1.png" width="89" height="90"/>
+        <image name="开始-圆-2.png" width="89" height="90"/>
+        <image name="红伞.png" width="640" height="960"/>
+    </resources>
+</document>

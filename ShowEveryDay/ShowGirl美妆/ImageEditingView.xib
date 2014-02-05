@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageEditingView">
+            <connections>
+                <outlet property="ivEditingImage" destination="GIM-R1-1L6" id="b2G-JV-xHZ"/>
+                <outlet property="saveImageBtn" destination="LCf-yp-jHR" id="b5j-hR-n81"/>
+                <outlet property="view" destination="1" id="Lng-em-cYD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="style.png" translatesAutoresizingMaskIntoConstraints="NO" id="nNm-fY-LRz" userLabel="Image View-相框">
+                    <rect key="frame" x="0.0" y="-17" width="320" height="585"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCf-yp-jHR">
+                    <rect key="frame" x="43" y="333" width="35" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Uny-7J-49F"/>
+                        <constraint firstAttribute="width" constant="35" id="fup-MH-Nfx"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="heart.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="saveImage:" destination="-1" eventType="touchUpInside" id="mKt-u8-JRe"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GIM-R1-1L6">
+                    <rect key="frame" x="60" y="51" width="200" height="300"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="km8-VO-h3g"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ls-OQ-mV1">
+                    <rect key="frame" x="20" y="393" width="70" height="70"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="Zaw-hV-5OK"/>
+                        <constraint firstAttribute="height" constant="70" id="sAh-Uy-Osf"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                    <state key="normal" title="重拍" backgroundImage="开始-圆-1.png">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="reDoPhoto:" destination="-1" eventType="touchUpInside" id="IcC-v7-gKP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GDV-WO-Ldy">
+                    <rect key="frame" x="125" y="393" width="70" height="70"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="分享" backgroundImage="开始-圆-1.png">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="doShare:" destination="-1" eventType="touchUpInside" id="UzZ-Ei-RCc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JD3-G5-pBF">
+                    <rect key="frame" x="230" y="393" width="70" height="70"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="返回" backgroundImage="开始-圆-1.png">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="doFinishReturn:" destination="-1" eventType="touchUpInside" id="t2e-BX-5Yc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="nNm-fY-LRz" firstAttribute="centerX" secondItem="GIM-R1-1L6" secondAttribute="centerX" id="0XT-bw-yPb"/>
+                <constraint firstItem="JD3-G5-pBF" firstAttribute="leading" secondItem="GDV-WO-Ldy" secondAttribute="trailing" constant="35" id="8zd-0b-ZfO"/>
+                <constraint firstItem="GDV-WO-Ldy" firstAttribute="top" secondItem="8Ls-OQ-mV1" secondAttribute="top" id="Avf-Zj-o8a"/>
+                <constraint firstItem="GDV-WO-Ldy" firstAttribute="top" secondItem="GIM-R1-1L6" secondAttribute="bottom" constant="42" id="Ebx-GY-Hgd"/>
+                <constraint firstItem="nNm-fY-LRz" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="FX8-5i-ZNi"/>
+                <constraint firstItem="GDV-WO-Ldy" firstAttribute="bottom" secondItem="JD3-G5-pBF" secondAttribute="bottom" id="JIZ-tM-dne"/>
+                <constraint firstAttribute="trailing" secondItem="JD3-G5-pBF" secondAttribute="trailing" constant="20" symbolic="YES" id="SUa-z4-fy2"/>
+                <constraint firstItem="8Ls-OQ-mV1" firstAttribute="top" secondItem="LCf-yp-jHR" secondAttribute="bottom" constant="30" id="ULk-5B-Am5"/>
+                <constraint firstItem="GIM-R1-1L6" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="60" id="Vgg-mo-eHt"/>
+                <constraint firstItem="LCf-yp-jHR" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="43" id="Vks-8D-pJE"/>
+                <constraint firstItem="nNm-fY-LRz" firstAttribute="top" secondItem="1" secondAttribute="top" constant="-17" id="XjM-d2-6aG"/>
+                <constraint firstItem="GDV-WO-Ldy" firstAttribute="leading" secondItem="8Ls-OQ-mV1" secondAttribute="trailing" constant="35" id="YSV-b3-5aM"/>
+                <constraint firstAttribute="trailing" secondItem="nNm-fY-LRz" secondAttribute="trailing" id="Yff-pE-wjk"/>
+                <constraint firstItem="GIM-R1-1L6" firstAttribute="centerX" secondItem="GDV-WO-Ldy" secondAttribute="centerX" id="a2m-Et-oZU"/>
+                <constraint firstAttribute="bottom" secondItem="nNm-fY-LRz" secondAttribute="bottom" id="awK-H0-HRS"/>
+                <constraint firstItem="JD3-G5-pBF" firstAttribute="top" secondItem="GDV-WO-Ldy" secondAttribute="top" id="h2k-hf-IgO"/>
+                <constraint firstItem="GIM-R1-1L6" firstAttribute="top" secondItem="1" secondAttribute="top" constant="51" id="h8u-27-8MN"/>
+                <constraint firstItem="GDV-WO-Ldy" firstAttribute="bottom" secondItem="8Ls-OQ-mV1" secondAttribute="bottom" id="rXr-8C-ZYr"/>
+                <constraint firstItem="8Ls-OQ-mV1" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="zcD-Ku-5hu"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="heart.png" width="114" height="96"/>
+        <image name="style.png" width="640" height="960"/>
+        <image name="开始-圆-1.png" width="89" height="90"/>
+    </resources>
+</document>

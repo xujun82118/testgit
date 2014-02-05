@@ -1,0 +1,21 @@
+//
+// Prefix header for all source files of the 'ShowGirl美妆' target in the 'ShowGirl美妆' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+
+#import "WeiboSDK.h"
+#import "YouMiConfig.h"
+
+#define kAppKey         @"3318551146"
+#define kRedirectURI    @"http://www.sina.com"
+
+#endif
